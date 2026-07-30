@@ -30,5 +30,4 @@ jobs:
           host: ${{ secrets.HOST_HOSTINGER }}
           username: ${{ secrets.USERNAME_KRAB }}
           key: ${{ secrets.VPS_SSH_KEY_HOSTINGER }}
-          port: ${{ secrets.PORT_HOSTINGER }}
           script: echo "Hello World"
