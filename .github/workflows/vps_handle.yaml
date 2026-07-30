@@ -31,3 +31,12 @@ jobs:
           username: ${{ secrets.USERNAME_KRAB }}
           key: ${{ secrets.VPS_SSH_KEY_HOSTINGER }}
           script: echo "Hello World"
+
+      - name: Debug Host Size
+        run: echo "Tamanho da chave é ${{ strlen(secrets.HOST_HOSTINGER) }}"
+
+      - name: Debug Username Size
+        run: echo "Tamanho da chave é ${{ strlen(secrets.USERNAME_KRAB) }}"
+
+      - name: Debug Secret Size
+        run: echo "Tamanho da chave é ${{ strlen(secrets.VPS_SSH_KEY_HOSTINGER) }}"
